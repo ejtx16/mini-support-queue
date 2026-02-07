@@ -21,7 +21,7 @@ A React TypeScript support ticket management application that enables support ag
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/ejtx16/mini-support-queue
 cd ticketing-app
 ```
 

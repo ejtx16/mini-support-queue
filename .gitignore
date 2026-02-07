@@ -1,0 +1,7 @@
+.cursor 
+.vscode
+/documents/*
+/AGENTS.md
+/node_modules/*
+/dist/*
+/build/*

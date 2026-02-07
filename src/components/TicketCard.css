@@ -1,0 +1,134 @@
+.ticket-card {
+  background-color: var(--color-lightest);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-left: 3px solid var(--color-border);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ticket-card:hover {
+  background-color: var(--color-light);
+}
+
+.ticket-card[data-priority="VIP"] {
+  border-left-color: var(--color-vip);
+}
+
+.ticket-card[data-priority="Regular"] {
+  border-left-color: var(--color-regular);
+}
+
+.ticket-card__header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.ticket-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ticket-badge--vip {
+  background-color: var(--color-vip);
+  color: white;
+}
+
+.ticket-badge--regular {
+  background-color: var(--color-regular);
+  color: white;
+}
+
+.ticket-status {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.ticket-status--open {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #856404;
+}
+
+.ticket-status--assigned {
+  background-color: rgba(0, 123, 255, 0.15);
+  color: #004085;
+}
+
+.ticket-status--resolved {
+  background-color: rgba(40, 167, 69, 0.15);
+  color: #155724;
+}
+
+.ticket-card__title {
+  color: var(--color-dark);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.ticket-card__description {
+  color: var(--color-body);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-sm);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ticket-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.6875rem;
+  color: var(--color-placeholder);
+}
+
+.ticket-card__date,
+.ticket-card__assignee {
+  display: flex;
+  align-items: center;
+}
+
+.ticket-card__actions {
+  display: flex;
+  gap: 6px;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.btn--secondary {
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  padding: 4px 10px;
+  font-size: 0.6875rem;
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: var(--color-light);
+  border-color: var(--color-primary);
+}
+
+.btn--success {
+  background-color: var(--color-success);
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.6875rem;
+}
+
+.btn--success:hover:not(:disabled) {
+  background-color: #218838;
+}

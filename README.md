@@ -65,7 +65,7 @@ src/
 │   ├── handlers.ts
 │   └── browser.ts
 ├── services/            # API service layer
-│   └── ticketService.ts
+│   └── ticket-service.ts
 ├── types/               # TypeScript types
 │   └── ticket.ts
 ├── __tests__/           # Test files
